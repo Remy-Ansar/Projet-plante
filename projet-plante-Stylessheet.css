@@ -1,0 +1,171 @@
+:root {
+    --color-brown-dark: #5A3921;
+    --color-brown-redish: #8C3333;
+    --color-green-light: #b0c9b065;
+    --color-green-plant: #669e2a;
+    --color-green-thicker: #6d815486;
+    --color-green-leaf: #98af7c86;
+    --color-green-dark: #5e7e52;
+    --color-yellow-light: #e5ffb5;
+    --color-yellow-greenish: #F2EE9D;
+
+
+  }
+  
+header, nav, div {
+    display: flex;
+    border: 1px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+
+  html {
+      font-size: 12px;
+  }
+  
+  @font-face {
+      font-family: Cormorant_Garamond;
+      src: url(Cormorant/CormorantGaramond-Regular.ttf);
+  }
+  
+  
+  ul {
+      list-style:none;
+  }
+  
+a {
+    text-decoration: none;
+}
+
+  body {
+      background-color:var(--color-green-light);
+      /* margin-left: 20px;
+      margin-right: 20px; */
+      font-family: Cormorant_Garamond;
+      
+      box-sizing: border-box;
+  }
+  
+  
+  header {
+    
+      width: 100%;
+      height: 200px;
+      /* background-color: var(--color-green-light); */
+      /* border: 1px solid transparent;
+      border-radius: 15px;
+      box-shadow: 5px 2px 5px var(--color-green-dark); */
+      margin-bottom: 20px;
+  }
+  
+  nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: 5px 2px 8px var(--color-green-dark);
+  }
+  
+  div a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-green-thicker);
+      border-radius: 15px;
+      padding: 15px;
+      height: 100%;
+      font-size: 2rem;
+  }
+
+ #menu-centre {
+    border: solid var(--color-green-dark);
+
+  }
+  
+  main { 
+    box-sizing: border-box;
+    margin-left: 50px;
+      margin-right: 50px;
+      height: 100vh;
+      border-radius: 15px;
+      /* background-color: var(--color-green-light); */
+      /* border: 1px solid var(--color-green-plant); */
+      display: grid;
+      justify-content: center;
+          grid-template-columns: 1fr;
+          grid-template-rows: 2fr 2fr 10fr;
+          gap: 10px 5px;
+          grid-auto-flow:column no-repeat;
+          grid-template-areas:
+            ". "
+            ". "
+            ". "
+            ". "
+            ". "
+            ". ";
+            margin-bottom: 20px;
+            overflow:visible;
+        }
+  
+  form {
+      background-color: var(--color-green-thicker);
+      border-radius: 15px;
+      box-shadow: 5px 2px 8px var(--color-green-dark);
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  
+  .pic_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      background-color: var(--color-green-leaf);
+      border: 1px solid transparent;
+      border-radius: 15px;
+      box-shadow: 5px 2px 5px var(--color-green-dark);
+  }
+  
+  footer {
+      /* background-color: var(--color-green-light);
+      border: 1px solid var(--color-green-plant); */
+      border-radius: 15px;
+      display: flex;
+  }
+  
+  h2 ::before {
+      content: url(img/croissance.png);
+      width: 50px;
+  }
+  
+  #Symbole-ajout:hover {
+  transform: scale(1.5);
+  transition: ease-in, 1s, alternate, forwards;
+  }
+  
+  .menu:hover {
+  transform: scale(1.1);
+  transition: ease-in, 1s, alternate, forwards;
+
+  }
+  
+  div a:hover {
+  transform: scale(1.1);
+  transition: ease-in, 1s, alternate, forwards;
+  }
+  .pic_container:hover {
+  transform: scale(1.1);
+  transition: ease-in, 1s, alternate, forwards;
+  }
