@@ -7,14 +7,21 @@
     --color-green-thicker: #6d815486;
     --color-green-leaf: #98af7c86;
     --color-green-dark: #5e7e52;
+    --color-green-sapin: #1a3f13;
+    --color-green-olive: #809e6c;
     --color-yellow-light: #e5ffb5;
     --color-yellow-greenish: #F2EE9D;
+    --color-orange-peach: #dcad83;
+    --color-beige-light: #ebe5d5;
+    --color-white-ligher: #f2f2f2;
+    --color-white-mint: #F5FFFA;
 }
 
 /* Paramètres principaux */
 
 html {
     font-size: 12px;
+    background-color: whitesmoke;
 }
 
 body {
