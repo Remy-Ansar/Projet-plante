@@ -89,19 +89,21 @@ nav {
     border-radius: 15px;
     padding: 10px;
     height: 100%;
-    font-size: 1..2rem;
+    font-size: 1.2rem;
     width: 30vw;
 }
 
-#menu-gauche
+#menu-gauche {
+    border-right: solid var(--color-green-dark);
+    width: 50vw;
+}
 
 #menu-centre {
-    border: solid var(--color-green-dark);
-
+    display: none
 }
 
 #menu-droite {
-
+    width: 50vw;
 }
 
 /* h2 ::before {
@@ -235,10 +237,24 @@ nav {
     font-size: 2rem;
 }
 
-#menu-centre {
-    border: solid var(--color-green-dark);
-
+#menu-gauche {
+    display: flex;
+    border-right: solid var(--color-green-dark);
+    width: 33vw;
 }
+
+
+#menu-centre {
+    display: flex;
+    border-right: solid var(--color-green-dark);
+    width: 33vw;
+}
+
+#menu-droite {
+    display: flex;
+    width: 33vw;
+}
+
 
 h2 ::before {
     content: url(img/croissance.png);

@@ -89,19 +89,20 @@ nav {
     border-radius: 15px;
     padding: 10px;
     height: 100%;
-    font-size: 1..2rem;
-    width: 30vw;
+    font-size: 1.2rem;
 }
 
-#menu-gauche
+#menu-gauche {
+    width: 50vw;
+}
 
 #menu-centre {
     border: solid var(--color-green-dark);
-
+    width: 50vw;
 }
 
 #menu-droite {
-
+display: none;
 }
 
 /* h2 ::before {
@@ -111,31 +112,42 @@ nav {
 
 
 /* Paramètres du aside */
+
+form {
+    background-color: var(--color-green-thicker);
+    border-radius: 15px;
+    box-shadow: 5px 2px 8px var(--color-green-dark);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 /* Paramètres du main */
+
+
+  
 
 /* Grid principale */
 main {
+    display: flex;
+}
+.container {  
     box-sizing: border-box;
+    height: 100vh;
     margin-left: 50px;
     margin-right: 50px;
-    height: 100vh;
-    border-radius: 15px;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr 10fr;
-    gap: 10px 5px;
-    grid-auto-flow: column no-repeat;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
     grid-template-areas:
-        ". "
-        ". "
-        ". "
-        ". "
-        ". "
-        ". ";
-    margin-bottom: 20px;
-    overflow: visible;
-}
+      ". . ."
+      ". . ."
+      ". . .";
+      overflow: visible;
+  }
 
 /* Affichage à l'intérieur de la grid principale*/
 
@@ -157,14 +169,6 @@ footer {
     display: flex;
 }
 
-form {
-    background-color: var(--color-green-thicker);
-    border-radius: 15px;
-    box-shadow: 5px 2px 8px var(--color-green-dark);
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-}
 
 /* Hovering */
 
@@ -235,13 +239,55 @@ nav {
     font-size: 2rem;
 }
 
-#menu-centre {
-    border: solid var(--color-green-dark);
-
+#menu-gauche {
+    display: flex;
+    width: 33vw;
 }
+
+
+#menu-centre {
+    display: flex;
+    border-right: solid var(--color-green-dark);
+    width: 33vw;
+}
+
+#menu-droite {
+    display: flex;
+    width: 33vw;
+}
+
 
 h2 ::before {
     content: url(img/croissance.png);
     width: 50px;
 }
+
+.container {  
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+
+/* Affichage à l'intérieur de la grid principale*/
+
+.pic_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: var(--color-green-leaf);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 5px 2px 5px var(--color-green-dark);
+}
+
+
+
 }
