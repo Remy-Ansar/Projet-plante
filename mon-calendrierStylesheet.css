@@ -1,4 +1,3 @@
-/* Palette de couleurs */
 :root {
     --color-brown-dark: #5A3921;
     --color-brown-redish: #8C3333;
@@ -21,10 +20,11 @@
 
 html {
     font-size: 12px;
+    background-color: whitesmoke;
 }
 
 body {
-    background-color: var(--color-green-light);
+    background-color: var(--color-white-mint);
     font-family: Cormorant_Garamond;
     box-sizing: border-box;
 }
@@ -37,11 +37,11 @@ a {
     text-decoration: none;
 }
 
-a h2 { 
-   display: flex;
-   flex-direction: column; 
-   align-items: center;
-   justify-content: center;
+a h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Polices */
@@ -52,7 +52,6 @@ a h2 {
 }
 
 /* Paramètres du header */
-header,
 nav,
 div {
     display: flex;
@@ -71,28 +70,27 @@ div a {
 header {
     display: flex;
     justify-content: center;
-    width: 90vwvw;
+    /* width: 90vww; */
     height: 15vh;
     margin-bottom: 20px;
-    
+
 }
 
 nav {
-    width: 90vw;
+    
     height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    box-shadow: 5px 2px 8px var(--color-green-dark);
+    box-shadow: 5px 2px 8px var(--color-green-sapin);
 }
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-green-thicker);
-    border-radius: 15px;
+    background-color: var(--color-green-olive);
     padding: 10px;
     height: 100%;
     font-size: 1.2rem;
