@@ -1,4 +1,4 @@
-/* Palette de couleurs */
+/*Palette de couleur*/
 :root {
     --color-brown-dark: #5A3921;
     --color-brown-redish: #8C3333;
@@ -9,12 +9,18 @@
     --color-green-dark: #5e7e52;
     --color-green-sapin: #1a3f13;
     --color-green-olive: #809e6c;
+    --color-green-apple:#c2ffc2;
+    --color-green-frozen:#88b388;
+    --color-green-transparent:#f0fff0;
+    --color-green-winter:#e1ffe1;
+    --color-green-flashy:#99ff99;
     --color-yellow-light: #e5ffb5;
     --color-yellow-greenish: #F2EE9D;
     --color-orange-peach: #dcad83;
     --color-beige-light: #ebe5d5;
     --color-white-ligher: #f2f2f2;
     --color-white-mint: #F5FFFA;
+
 }
 
 /* Paramètres principaux */
@@ -125,7 +131,7 @@ nav {
 
 /*margin*/
 
-main, footer
+
 main {
     box-sizing: border-box;
     margin-left: 50px;
