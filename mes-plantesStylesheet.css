@@ -60,6 +60,11 @@ a h2 {
 
 /* Paramètres du header */
 
+#menu_burger {
+height: 50px;
+
+}
+
 div {
     display: flex;
     border: 1px;
@@ -202,8 +207,13 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     
-    
 }
+
+
+
+/* .list-separation {
+    border-right: 1px solid var(--color-green-sapin);
+} */
 
 /* Hovering */
 
