@@ -241,6 +241,18 @@ div a:hover {
 
 @media screen and (min-width: 760px) {
 
+    main { 
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". . ."
+          ". . .";
+      }
   
     div {
         display: flex;
